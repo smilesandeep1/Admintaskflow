@@ -1,0 +1,115 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --background: 0 0% 98%;
+    --foreground: 220 15% 25%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 25%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 25%;
+    --primary: 210 74% 27%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 15% 92%;
+    --secondary-foreground: 220 15% 25%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 210 20% 94%;
+    --accent-foreground: 220 15% 25%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 210 74% 27%;
+    --chart-1: 210 74% 27%;
+    --chart-2: 142 76% 36%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 220 15% 60%;
+    --chart-5: 0 84% 60%;
+    --sidebar-background: 210 74% 27%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 210 74% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 74% 22%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 74% 20%;
+    --sidebar-ring: 210 74% 30%;
+    --status-pending: 38 92% 50%;
+    --status-pending-foreground: 0 0% 100%;
+    --status-in-progress: 210 74% 27%;
+    --status-in-progress-foreground: 0 0% 100%;
+    --status-completed: 142 76% 36%;
+    --status-completed-foreground: 0 0% 100%;
+    --status-cancelled: 220 10% 55%;
+    --status-cancelled-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 220 20% 12%;
+    --foreground: 220 15% 90%;
+    --card: 220 20% 15%;
+    --card-foreground: 220 15% 90%;
+    --popover: 220 20% 15%;
+    --popover-foreground: 220 15% 90%;
+    --primary: 210 74% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 15% 25%;
+    --secondary-foreground: 220 15% 90%;
+    --muted: 220 20% 20%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 220 20% 22%;
+    --accent-foreground: 220 15% 90%;
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 20% 25%;
+    --input: 220 20% 25%;
+    --ring: 210 74% 40%;
+    --chart-1: 210 74% 40%;
+    --chart-2: 142 76% 45%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 220 15% 60%;
+    --chart-5: 0 84% 60%;
+    --sidebar-background: 210 74% 20%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 210 74% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 74% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 74% 15%;
+    --sidebar-ring: 210 74% 40%;
+    --status-pending: 38 92% 50%;
+    --status-pending-foreground: 0 0% 100%;
+    --status-in-progress: 210 74% 40%;
+    --status-in-progress-foreground: 0 0% 100%;
+    --status-completed: 142 76% 45%;
+    --status-completed-foreground: 0 0% 100%;
+    --status-cancelled: 220 10% 60%;
+    --status-cancelled-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
